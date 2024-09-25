@@ -1,5 +1,6 @@
 import NavbarSearch from "./NavbarSearch";
 import Logo from "./../../../public/favicon.png";
+import { FaSearch } from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -12,11 +13,8 @@ function Navbar() {
         <div className="border border-slate-200 flex items-center bg-white h-10 px-5 rounded-lg text-sm ring-emerald-200">
           {/* Navbar Serch */}
           <NavbarSearch />
-          <img
-            className="inline h-4 cursor-pointer"
-            src="./assets/search.svg"
-            alt="Search"
-          />
+          <FaSearch className="inline h-4 cursor-pointer"/>
+          
         </div>
       </div>
     </nav>
