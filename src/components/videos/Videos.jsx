@@ -14,7 +14,7 @@ function Videos() {
     dispatch(fetchVideos());
   }, [dispatch]);
 
-  let content;
+  let content = null;
   if (isLoading) content = <Loading />;
 
   if (!isLoading && isError)
