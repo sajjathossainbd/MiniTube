@@ -6,7 +6,6 @@ import VideoPage from "../pages/VideoPage";
 const router = createBrowserRouter([
   {
     path: "/",
-    exact: true,
     component: <Root />,
     children: [
       {
