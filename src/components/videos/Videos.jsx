@@ -10,9 +10,11 @@ function Videos() {
     (state) => state.videos
   );
 
+  const {tags, search} = useSelector((state) => state.filter)
+
   useEffect(() => {
-    dispatch(fetchVideos());
-  }, [dispatch]);
+    dispatch(fetchVideos({tags, search}));
+  }, [dispatch, tags, search]);
 
   let content = null;
   if (isLoading) content = <Loading />;
